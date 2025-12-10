@@ -1,0 +1,4 @@
+#include "shaders.hpp"
+
+IDR_VS RCDATA VS_FILENAME
+IDR_PS RCDATA PS_FILENAME

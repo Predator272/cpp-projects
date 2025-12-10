@@ -1,0 +1,58 @@
+#include "resources.hpp"
+
+0x0001 ICON "icon.ico"
+
+STRINGTABLE
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+{
+	0x0001 "По умолчанию"
+	0x0002 "Запретить спящий режим"
+	0x0003 "Запретить спящий режим и выключать экран"
+}
+
+0x0001 DIALOGEX 0, 0, 200, 95
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+CAPTION PROJECT_DESCRIPTION
+EXSTYLE WS_EX_APPWINDOW
+STYLE DS_CENTER | WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX
+FONT 8, "MS Shell Dlg"
+{
+	GROUPBOX "Управление спящим режимом", 0x0011, 6, 6, 188, 30
+	CONTROL "", 0x0001, "ComboBoxEx32", CBS_DROPDOWNLIST, 12, 18, 176, 100
+	GROUPBOX "Управление внешним видом папки", 0x0012, 6, 42, 188, 47
+	CONTROL "", 0x0002, "ComboBoxEx32", CBS_DROPDOWN | CBS_HASSTRINGS, 12, 54, 176, 100
+	CONTROL "", 0x0003, "ComboBoxEx32", CBS_DROPDOWNLIST, 12, 70, 176, 100
+}
+
+
+0x1000 ICON "icons/folder.ico"
+0x1001 ICON "icons/disk.ico"
+0x1002 ICON "icons/documents.ico"
+0x1003 ICON "icons/documents.ico"
+0x1004 ICON "icons/pictures.ico"
+0x1005 ICON "icons/music.ico"
+0x1006 ICON "icons/videos.ico"
+
+STRINGTABLE
+LANGUAGE LANG_ENGLISH, SUBLANG_DEFAULT
+{
+	0x1000 "Default"
+	0x1001 "Programs"
+	0x1002 "Projects"
+	0x1003 "Documents"
+	0x1004 "Pictures"
+	0x1005 "Music"
+	0x1006 "Videos"
+}
+
+STRINGTABLE
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+{
+	0x1000 "По умолчанию"
+	0x1001 "Программы"
+	0x1002 "Проекты"
+	0x1003 "Документы"
+	0x1004 "Изображения"
+	0x1005 "Музыка"
+	0x1006 "Видео"
+}

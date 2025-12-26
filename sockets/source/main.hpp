@@ -100,8 +100,6 @@ public:
 		}
 
 		running = true;
-		CreateThread(nullptr, 0, )
-
 
 		worker = std::thread([this]() { eventLoop(); });
 	}
